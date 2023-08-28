@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bsv": "^2.0.10",
+    "bsv": "^1.5.6",
+    "chai": "^4.3.8",
+    "dotenv": "^16.3.1",
     "stas-sdk": "^1.0.3"
   }
 }

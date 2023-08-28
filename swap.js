@@ -1,26 +1,30 @@
 ;
-const bsv = require("bsv");
-const expect = require("chai").expect;
+
+const bsv = require('bsv');
 const stas = require('stas-sdk');
+
+// const {
+//     createSwapOffer,
+//     acceptSwapOffer,
+//     allInOneSwap,
+//     createUnsignedSwapOffer,
+//     acceptUnsignedSwapOffer,
+//     acceptUnsignedNativeSwapOffer,
+//     makerSignSwapOffer,
+//   } = require("stas-sdk/index");
+
+// or to get single functions directly 
+const {stasTransfer, createSwapOffer, acceptSwapOffer} = require('stas-sdk/index');
 
 require("dotenv").config();
 
-const {
-  createSwapOffer,
-  acceptSwapOffer,
-  allInOneSwap,
-  createUnsignedSwapOffer,
-  acceptUnsignedSwapOffer,
-  acceptUnsignedNativeSwapOffer,
-  makerSignSwapOffer,
-} = require("stas-sdk/index").swap;
 
 const {
   bitcoinToSatoshis,
   getTransaction,
   getRawTransaction,
   getFundsFromFaucet,
-} = require("stas-sdk/index").utils;
+} = require("stas-sdk/index");
 
 const { contract, issue, transfer } = require("stas-sdk/index");
 
